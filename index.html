@@ -1,162 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cruz Roja</title>
     <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
-      crossorigin="anonymous"/>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
-      rel="stylesheet"/>
-  </head>
-  <body>
-    <nav>
-      <section class="contenedor nav">
-        <div class="logo">
-          <img src="img/logo.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="contenedor">
+            <div class="logo">
+                <a href="#" class="logo"><img src="img/logo.png" /></a>
+            </div>
+
+            <input type="checkbox" id="hamburguer-toggle">
+            <label class="hamburguer-wrapper" for="hamburguer-toggle">
+                <span class="hamburguer"></span>
+            </label>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="https://www.cruzroja.org.ar/cruz-roja-argentina/" class="link-principal">cruz roja argentina</a></li>
+                    <li><a href="https://www.cruzroja.org.ar/filiales/" class="link-principal">filiales</a></li>
+                    <li><a href="https://www.cruzroja.org.ar/voluntariado/" class="link-principal">sumate</a></li>
+                    <li><a href="https://www.cruzroja.org.ar/dona/" class="link-principal">colabora</a></li>
+                </ul>
+            </nav>
+
         </div>
 
-        <div class="links">
-          <ul class="nav-list">
-            <li routerLinkActive="active">
-              <a
-                href="https://www.cruzroja.org.ar/cruz-roja-argentina/"
-                class="link-principal"
-                >Cruz Roja Argentina</a
-              >
-              <a
-                href="https://www.cruzroja.org.ar/filiales/"
-                class="link-principal"
-                >Filiales</a
-              >
-              <a
-                href="https://www.cruzroja.org.ar/voluntariado/"
-                class="link-principal"
-                >Sumate</a
-              >
-              <a href="https://www.cruzroja.org.ar/dona/" class="link-principal"
-                >Colabora</a
-              >
-            </li>
-          </ul>
+        <div class="titulo">
+            <div class="icono">
+                <i class="fas fa-times "></i>
+            </div>
+            <h2>sumate!</h2>
         </div>
-
-        <div class="link-sicreyd">
-          <ul>
-            <li>
-              <a class="link" (click)="login()">SiCREYD</a>
-            </li>
-          </ul>
+        <div class="button">
+            <button class="btn"><a href="https://www.cruzroja.org.ar/voluntariado/">al voluntariado</a></button>
+            <button class="btn"><a href="https://www.cruzroja.org.ar/dona/">con tu apoyo</a></button>
         </div>
-      </section>
-    </nav>
-
-    <div
-      id="carouselExampleCaptions"
-      class="carousel slide"
-      data-ride="carousel"
-    >
-      <ol class="carousel-indicators">
-        <li
-          data-target="#carouselExampleCaptions"
-          data-slide-to="0"
-          class="active"
-        ></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item background active">
-          <img
-            src="img/monumento-cr.png"
-            class="img-slider-3 d-block w-100"
-            alt="..."
-          />
-          <div class="carousel-caption d-none d-md-block text-left">
-            <h1 class="title-slide">Sumate!</h1>
-            <p>
-              Estamos juntos entre nosotros y la comunidad acompañando todas las
-              circunstancias.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item background">
-          <img src="img/codos.jpg" class="img-slider d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-lg-block text-left">
-            <h1 class="title-slide">Equipo</h1>
-            <p>
-              Con conciencia, con respeto y vocacion nos cuidamos entre todos.
-            </p>
-          </div>
-        </div>
-
-        <div class="carousel-item background">
-          <img
-            src="img/campana.webp"
-            class="img-slider d-block w-100"
-            alt="..."
-          />
-          <div class="carousel-caption d-none d-md-block text-left">
-            <h1 class="title-slide-2">Conocimientos</h1>
-            <p>
-              Estamos en constante capacitacion y desarrollo de habilidades para
-              afrontar las problematicas que se presentan.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <a
-        class="carousel-control-prev"
-        href="#carouselExampleCaptions"
-        role="button"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a
-        class="carousel-control-next"
-        href="#carouselExampleCaptions"
-        role="button"
-        data-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-
+    </header>
     <!-- Cruz Roja Covid -->
-    <section class="contenido-covid contenedor1">
-      <section class="textos-covid">
-        <h2>En Emergencia | Covid-19</h2>
-        <a
-          href="https://www.cruzroja.org.ar/wp-content/uploads/2020/04/covid-19arg-pda-arg.pdf"
-          >Ver más</a
-        >
-      </section>
-      <img src="img/CruzRoja -Ilustracion.png" alt="" />
-    </section>
+    <!--     <section class="contenido-covid">
+        <section class="textos-covid">
+            <h2>En Emergencia | Covid-19</h2>
+            <a href="https://www.cruzroja.org.ar/wp-content/uploads/2020/04/covid-19arg-pda-arg.pdf">Ver más</a
+>
+        </section>
+        <img src="img/CruzRoja -Ilustracion.png" alt="" />
+    </section> -->
 
     <!-- Estudios -->
-    <section class="rcp-estudios">
-      <div class="contenedor1">
-        <div class="contenedor-articulo">
-          <div class="articulo">
-            <i class="fas fa-notes-medical"></i>
-            <p>Aprende primeros auxilios</p>
-            <a href="https://www.cruzroja.org.ar/newDesign/primeros-auxilios/"
-              >Ver cursos y filiales</a
+    <!-- <section class="rcp-estudios">
+        <div>
+            <div class="contenedor-articulo">
+                <div class="articulo">
+                    <i class="fas fa-notes-medical"></i>
+                    <p>Aprende primeros auxilios</p>
+                    <a href="https://www.cruzroja.org.ar/newDesign/primeros-auxilios/">Ver cursos y filiales</a
             >
           </div>
 
@@ -169,71 +75,66 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Parallax -->
 
-    <section class="Emergencias contenedor1">
-      <section class="textos">
-        <h2>Emergencias</h2>
+    <!--     <section class="Emergencias">
+        <section class="textos">
+            <h2>Emergencias</h2>
 
-        <p>
-          Acompañamos a las comunidades antes, durante y después de emergencias
-          y desastres.
-        </p>
+            <p>
+                Acompañamos a las comunidades antes, durante y después de emergencias y desastres.
+            </p>
 
-        <a href="https://www.cruzroja.org.ar/emergencias/">Ver más</a>
-      </section>
-    </section>
+            <a href="https://www.cruzroja.org.ar/emergencias/">Ver más</a>
+        </section>
+    </section> -->
 
     <!-- Campañas -->
-    <section class="campañas">
-      <div class="contenedor1">
-        <div class="contenedor-articulo">
-          <div class="articulo">
-            <img class="convivir" src="img/vidadona.png" alt="" />
-            <p class="donacion">
-              Sumate a nuestro banco virtual de donantes de sangre
-            </p>
-            <a href="#">Ver más</a>
-          </div>
+    <!--     <section class="campañas">
+        <div class="contenedor">
+            <div class="contenedor-articulo">
+                <div class="articulo">
+                    <img class="convivir" src="img/vidadona.png" alt="" />
+                    <p class="donacion">
+                        Sumate a nuestro banco virtual de donantes de sangre
+                    </p>
+                    <a href="#">Ver más</a>
+                </div>
 
-          <div class="articulo">
-            <img src="img/convivir.png" alt="" />
-            <p class="prevencion">
-              Centros de Prevención, Asesoramiento y Diagnóstico de VIH
-            </p>
-            <a href="#">Ver más</a>
-          </div>
+                <div class="articulo">
+                    <img src="img/convivir.png" alt="" />
+                    <p class="prevencion">
+                        Centros de Prevención, Asesoramiento y Diagnóstico de VIH
+                    </p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
+    </section> -->
 
     <!-- Servicios -->
-    <section class="servicio contenedor1">
-      <section class="textos-servicio">
-        <h2>
-          Servicio de teleasistencia para adultos mayores y personas con
-          discapacidad
-        </h2>
+    <!-- <section class="servicio contenedor">
+        <section class="textos-servicio">
+            <h2>
+                Servicio de teleasistencia para adultos mayores y personas con discapacidad
+            </h2>
 
-        <p>Las 24 horas los 365 días del año</p>
-        <a href="https://cruzroja.org.ar/cruzrojatecuida/">Ver más</a>
-      </section>
-      <img src="img/abuelos.jpg" alt="" />
-    </section>
+            <p>Las 24 horas los 365 días del año</p>
+            <a href="https://cruzroja.org.ar/cruzrojatecuida/">Ver más</a>
+        </section>
+        <img src="img/abuelos.jpg" alt="" />
+    </section> -->
 
-    <section class="rcp-app">
-      <div class="contenedor1">
-        <div class="contenedor-rcp-app">
-          <div class="articulo-rcp-app">
-            <i class="fas fa-briefcase-medical"></i>
-            <p>Prestaciones de Primeros Auxilios en eventos masivos</p>
-            <p>prestaciones@cruzroja.org.ar</p>
-            <a
-              class="link-rcp"
-              href="https://www.cruzroja.org.ar/prestaciones-primeros-auxilios/"
-              >Ver más</a
+    <!--     <section class="rcp-app">
+        <div class="contenedor">
+            <div class="contenedor-rcp-app">
+                <div class="articulo-rcp-app">
+                    <i class="fas fa-briefcase-medical"></i>
+                    <p>Prestaciones de Primeros Auxilios en eventos masivos</p>
+                    <p>prestaciones@cruzroja.org.ar</p>
+                    <a class="link-rcp" href="https://www.cruzroja.org.ar/prestaciones-primeros-auxilios/">Ver más</a
             >
           </div>
 
@@ -249,61 +150,58 @@
                 ><img src="img/APPSTORE.png"
               /></a>
 
-              <a
-                href="https://play.google.com/store/apps/details?id=com.cube.gdpc.fa"
-                ><img src="img/GOOGLEPLAY.png"
-              /></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.cube.gdpc.fa"><img src="img/GOOGLEPLAY.png" /></a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
+        </div>
+    </section> -->
 
     <!-- Programas -->
-    <section class="programa">
-      <div class="contenedor1">
-        <div class="contenedor-articulo-programas">
-          <div class="articulo-programa">
-            <img class="migrantes" src="img/migrantes.png" alt="" />
-            <p>Programa de asistencia y apoyo a migrantes</p>
-            <a href="#">Ver más</a>
-          </div>
+    <!--     <section class="programa">
+        <div class="contenedor">
+            <div class="contenedor-articulo-programas">
+                <div class="articulo-programa">
+                    <img class="migrantes" src="img/migrantes.png" alt="" />
+                    <p>Programa de asistencia y apoyo a migrantes</p>
+                    <a href="#">Ver más</a>
+                </div>
 
-          <div class="articulo-programa">
-            <img src="img/familia.jpg" />
-            <p>Programa de restablecmiento de contacto entre familiares</p>
-            <a href="#">Ver más</a>
-          </div>
+                <div class="articulo-programa">
+                    <img src="img/familia.jpg" />
+                    <p>Programa de restablecmiento de contacto entre familiares</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
-    <div>
-      <footer class="footer">
-        <div class="row">
-          <div class="col-lg-6 text-left">
-            <h5>CONTACTO</h5>
-            <a class="email" href="#" target="_blank">tesis.mb.unc@gmail.com</a>
-            <p class="phone">+54 351 423-1798</p>
-            <p>27 de Abril 1161, Córdoba, Argentina.</p>
-          </div>
-          <div class="col-lg-6 social-icons">
-            <h5 class="text-left">SEGUINOS</h5>
-            <br />
-            <a href="http://www.instagram.com/crargcordoba" target="_blank"
-              ><i class="fab fa-instagram"></i
+    <!--     <div>
+        <footer class="footer">
+            <div class="row">
+                <div class="col-lg-6 text-left">
+                    <h5>CONTACTO</h5>
+                    <a class="email" href="#" target="_blank">tesis.mb.unc@gmail.com</a>
+                    <p class="phone">+54 351 423-1798</p>
+                    <p>27 de Abril 1161, Córdoba, Argentina.</p>
+                </div>
+                <div class="col-lg-6 social-icons">
+                    <h5 class="text-left">SEGUINOS</h5>
+                    <br />
+                    <a href="http://www.instagram.com/crargcordoba" target="_blank"><i class="fab fa-instagram"></i
             ></a>
-            <a href="http://www.twitter.com/CRA_CBA" target="_blank"
-              ><i class="fab fa-twitter"></i
+                    <a href="http://www.twitter.com/CRA_CBA" target="_blank"><i class="fab fa-twitter"></i
             ></a>
-            <a href="http://www.facebook.com/cruzrojacba/" target="_blank"
-              ><i class="fab fa-facebook-f"></i
+                    <a href="http://www.facebook.com/cruzrojacba/" target="_blank"><i class="fab fa-facebook-f"></i
             ></a>
-          </div>
-        </div>
-        <p class="copyright">©2020 by UNC - Argentina</p>
-      </footer>
-    </div>
-  </body>
+                </div>
+            </div>
+            <p class="copyright">©2020 by UNC - Argentina</p>
+        </footer>
+    </div> -->
+
+
+</body>
+
 </html>
