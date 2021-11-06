@@ -10,8 +10,6 @@
 /* Navbar */
 
 .contenedor {
-    position: absolute;
-    padding: 20px;
     width: 100%;
     max-width: 122.5rem;
     margin: 0 auto;
@@ -19,6 +17,7 @@
 }
 
 .nav {
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -164,7 +163,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 60%;
+    height: 50%;
 }
 
 .icono {
@@ -257,6 +256,8 @@ h2 {
 .contenido-covid .textos-covid h2 {
     font-size: 70px;
     margin-bottom: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
 }
 
 .contenido-covid .textos-covid {
@@ -284,4 +285,70 @@ h2 {
 
 .contenido-covid img {
     width: 35%;
+}
+
+
+/* rcp-estudios */
+
+.rcp-estudios {
+    background: rgba(202, 201, 201, 0.337);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-articulo {
+    width: 70%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.articulo {
+    width: 30%;
+    background: #b31217;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.articulo .fas {
+    font-size: 35px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 1rem 0 1.5rem 0;
+    height: 90px;
+    width: 90px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.articulo p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.articulo a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #000;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.articulo a:hover {
+    border: 1px solid #fff;
 }
