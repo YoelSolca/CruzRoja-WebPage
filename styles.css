@@ -482,17 +482,55 @@ h2 {
     flex-direction: column;
 }
 
+.articulo-rcp-app p {
+    font-size: 20px;
+}
+
+.articulo-rcp-app img {
+    margin: 10px 0;
+}
+
 .articulo-rcp-app:nth-child(1) {
     flex-grow: 1;
     margin: 0 5rem;
 }
 
 .store a img {
-    margin-top: 15px;
-    margin-right: 10px;
     width: 25%;
+    margin: 0 .3rem;
 }
 
 .articulo-rcp-app h2 {
     font-size: 55px;
+}
+
+
+/* Materiales */
+
+.materiales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+}
+
+.materiales .materiales-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.materiales-text h2 {
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+
+.materiales-text p {
+    font-size: 20px;
+    color: #b31217;
+    font-weight: 600;
+}
+
+.materiales img {
+    width: 100%;
 }
