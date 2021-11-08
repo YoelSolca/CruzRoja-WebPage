@@ -432,3 +432,67 @@ h2 {
     width: 35%;
     margin: 10px 0 40px 0;
 }
+
+
+/* Servicios */
+
+.servicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicio img {
+    width: 35%;
+}
+
+.servicio .textos-servicio {
+    text-align: center;
+}
+
+.servicio .textos-servicio h2 {
+    font-size: 55px;
+}
+
+.servicio .textos-servicio p {
+    margin: 1.5rem 0;
+    font-size: 25px;
+}
+
+
+/* App */
+
+.rcp-app {
+    height: 500px;
+    background: rgba(202, 201, 201, 0.337);
+    display: flex;
+}
+
+.contenedor-rcp-app {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.articulo-rcp-app {
+    width: 35%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.articulo-rcp-app:nth-child(1) {
+    flex-grow: 1;
+    margin: 0 5rem;
+}
+
+.store a img {
+    margin-top: 15px;
+    margin-right: 10px;
+    width: 25%;
+}
+
+.articulo-rcp-app h2 {
+    font-size: 55px;
+}
