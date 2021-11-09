@@ -6,14 +6,20 @@
     font-family: 'Amatic SC', cursive;
 }
 
+body {
+    background: rgba(202, 201, 201, 0.337);
+}
+
 
 /* Navbar */
 
 .contenedor {
+    position: relative;
+    background: #fff;
     width: 100%;
     max-width: 122.5rem;
     margin: 0 auto;
-    z-index: 100;
+    z-index: 50;
 }
 
 .nav {
@@ -30,6 +36,7 @@ header {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    z-index: 100;
 }
 
 #hamburguer-toggle {
@@ -80,6 +87,7 @@ header {
     background-image: linear-gradient(120deg, #e13036fc, #b31217);
     clip-path: circle(0 at 100% 0);
     transition: all .3s;
+    z-index: 101;
 }
 
 .nav-list {
@@ -348,7 +356,8 @@ h2 {
     display: inline-block;
     color: #fff;
     text-decoration: none;
-    background: #000;
+    background: transparent;
+    border: 1px solid #fff;
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -364,9 +373,12 @@ h2 {
 /* Emergencias */
 
 .Emergencias {
+    height: 300px;
     background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .8)), url(img/emergencias.jpg);
     width: 100%;
-    height: 250px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .textos {
@@ -394,15 +406,22 @@ h2 {
 
 .articulo2 {
     width: 45%;
-    background: #fff;
+    background: #b31217;
 }
 
 .articulo2 p,
 .articulo2 a {
-    color: #000;
+    text-align: center;
 }
 
-.articulo2 .btn2 {
+
+/* .articulo2 p,
+.articulo2 a {
+    color: #000;
+} */
+
+
+/* .articulo2 .btn2 {
     text-align: center;
     margin-top: 1rem;
     width: 80%;
@@ -410,11 +429,13 @@ h2 {
     background: #fff;
     border: 1px solid #000;
 }
+ */
 
-.articulo2 .btn2:hover {
+
+/* .articulo2 .btn2:hover {
     background: #e13036fc;
     border: 1px solid #fff;
-}
+} */
 
 .text {
     display: flex;
@@ -509,9 +530,8 @@ h2 {
 
 .materiales {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     height: 400px;
 }
 
@@ -533,4 +553,29 @@ h2 {
 
 .materiales img {
     width: 100%;
+}
+
+
+/* Programas */
+
+.programa {
+    height: 450px;
+    flex-direction: row-reverse;
+}
+
+.servicio .img {
+    width: 30%;
+    transform: rotateY(180deg);
+}
+
+.servicio .textos-programa p {
+    margin-top: 3rem;
+}
+
+.servicio .textos-programa {
+    margin-left: 2rem;
+}
+
+.servicio .textos-programa a {
+    margin-top: 1rem;
 }
