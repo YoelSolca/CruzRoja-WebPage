@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Amatic SC', cursive;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 body {
@@ -134,7 +134,7 @@ header {
     text-transform: capitalize;
     padding: 10px;
     transition: .3s;
-    font-size: 24px;
+    font-size: 20px;
     position: relative;
     font-weight: 500;
 }
@@ -185,11 +185,12 @@ header {
 }
 
 h2 {
-    font-size: 110px;
-    font-weight: 500;
+    font-size: 70px;
+    font-weight: 400;
     animation: hidden 2s forwards;
     animation-delay: .2s;
     opacity: 0;
+    text-transform: uppercase;
 }
 
 @keyframes spin {
@@ -221,7 +222,8 @@ h2 {
 
 .btn {
     cursor: pointer;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: 100;
     border: none;
     background: #eb363cad;
     padding: 20px 60px;
@@ -262,10 +264,10 @@ h2 {
 }
 
 .contenido-covid .textos-covid h2 {
-    font-size: 70px;
+    font-size: 50px;
     margin-bottom: 1rem;
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 .contenido-covid .textos-covid {
@@ -273,7 +275,7 @@ h2 {
 }
 
 .btn2 {
-    font-size: 20px;
+    font-size: 15px;
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -327,7 +329,8 @@ h2 {
     transition: all .5s ease;
 }
 
-.articulo:hover {
+.articulo:hover,
+.articulo-rcp-app:nth-child(2):hover {
     box-shadow: 0 2px 5px 2px rgba(0, 0, 0, .2);
 }
 
@@ -346,13 +349,14 @@ h2 {
 
 .articulo p {
     color: #fff;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 15px;
     margin-bottom: 20px;
     text-align: center;
+    text-transform: capitalize;
 }
 
 .articulo a {
+    font-size: 15px;
     display: inline-block;
     color: #fff;
     text-decoration: none;
@@ -364,6 +368,10 @@ h2 {
     transition: background .9s ease;
 }
 
+.articulo p:nth-child(1) {
+    padding: 15px;
+}
+
 .articulo a:hover {
     background: #fff;
     color: #000;
@@ -373,17 +381,31 @@ h2 {
 /* Emergencias */
 
 .Emergencias {
+    margin-top: 5rem;
     height: 300px;
-    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .8)), url(img/emergencias.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7)), url(img/red.jpg);
     width: 100%;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .textos {
     text-align: center;
     color: #fff;
+}
+
+.textos h2 {
+    font-size: 55px;
+    text-transform: capitalize;
+}
+
+.textos P {
+    font-size: 18px;
+    margin: 1rem 0;
 }
 
 .textos a {
@@ -392,7 +414,7 @@ h2 {
     color: #fff;
     background: #e1303691;
     padding: 15px 35px;
-    width: 15%;
+    width: 45%;
     margin-top: 20px;
     transition: background .5s ease;
 }
@@ -435,7 +457,7 @@ h2 {
 
 .servicio {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -448,26 +470,26 @@ h2 {
 }
 
 .servicio .textos-servicio h2 {
-    font-size: 55px;
+    font-size: 25px;
 }
 
 .servicio .textos-servicio p {
     margin: 1.5rem 0;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 
 /* App */
 
 .rcp-app {
-    height: 430px;
+    height: 500px;
     background: rgba(202, 201, 201, 0.337);
     display: flex;
 }
 
 .contenedor-rcp-app {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
 }
@@ -475,21 +497,22 @@ h2 {
 .articulo-rcp-app {
     width: 35%;
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    padding: 15px 0;
+}
+
+.articulo-rcp-app:nth-child(2) {
+    background: #fff;
+    border-radius: 5px;
+    transition: box-shadow .5s;
 }
 
 .articulo-rcp-app p {
-    font-size: 20px;
+    font-size: 15px;
+    text-transform: capitalize;
 }
 
 .articulo-rcp-app img {
-    margin: 10px 0;
-}
-
-.articulo-rcp-app:nth-child(1) {
-    flex-grow: 1;
-    margin: 0 5rem;
+    width: 34%;
 }
 
 .store a img {
@@ -518,12 +541,13 @@ h2 {
 }
 
 .materiales-text h2 {
-    font-size: 65px;
+    text-transform: capitalize;
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
 .materiales-text p {
-    font-size: 20px;
+    font-size: 15px;
     color: #b31217;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -556,7 +580,7 @@ h2 {
 }
 
 .servicio .textos-programa a {
-    margin-top: 1rem;
+    margin-top: 4rem;
 }
 
 .empresas {
@@ -564,12 +588,12 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 450px;
+    height: 600px;
 }
 
 .empresas h2 {
     margin-bottom: 4rem;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .empresas-cards {
@@ -615,7 +639,8 @@ h2 {
     flex-direction: column;
     text-align: center;
     width: 100%;
-    font-size: 20px;
+    font-size: 15px;
+    text-transform: capitalize;
 }
 
 .footer-text:nth-child(2),
@@ -629,10 +654,12 @@ h2 {
 }
 
 h5 {
-    font-size: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
     width: 100%;
     margin-top: 1rem;
-    margin-right: 6rem;
+    margin-right: 7rem;
 }
 
 .footer-contact {
@@ -648,9 +675,13 @@ h5 {
     width: 100%;
 }
 
+.email {
+    text-transform: none;
+}
+
 .icons {
     cursor: pointer;
-    font-size: 20px;
+    font-size: 13px;
     margin: .5rem 0;
     margin-right: 1rem;
     height: 30px;
@@ -668,4 +699,18 @@ h5 {
     background: #fff;
     border-radius: 50%;
     color: #b31217;
+}
+
+.Argentina {
+    margin-top: 0;
+}
+
+.Argentina .Argentina-text a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.Argentina .Argentina-text h2 {
+    font-size: 40px;
+    text-transform: none;
 }
